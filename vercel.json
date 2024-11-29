@@ -4,5 +4,11 @@
       "source": "/simple(/.*)",
       "destination": "/api"
     }
+  ],
+  "redirects": [
+    {
+      "source": "/",
+      "destination": "https://github.com/celsiusnarhwal/fa-proxy"
+    }
   ]
 }
