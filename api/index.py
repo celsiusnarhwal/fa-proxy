@@ -9,6 +9,6 @@ app = FastAPI()
 security = HTTPBasic()
 
 
-@app.get("/simple/{path:path}")
+@app.get("/simple/fontawesomepro")
 async def proxy(credentials: t.Annotated[HTTPBasicCredentials, Depends(security)]):
     return RedirectResponse(f"https://dl.fontawesome.com/{credentials.password}/fontawesome-pro/python/simple")
