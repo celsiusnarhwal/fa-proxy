@@ -10,5 +10,6 @@
       "source": "/",
       "destination": "https://github.com/celsiusnarhwal/fa-proxy"
     }
-  ]
+  ],
+  "trailingSlash": true
 }
