@@ -51,7 +51,7 @@ Pro package token:
 poetry config http-basic.fontawesome <username> <token>
 ```
 
-You can now install Font Awesome Pro
+You can now install Font Awesome Pro:
 
 ```shell
 poetry add --source fontawesome fontawesomepro
