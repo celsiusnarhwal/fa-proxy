@@ -5,7 +5,7 @@ fa-proxy is an HTTP Basic authentication wrapper around Font Awesome's
 It exists to allow users of [uv](https://docs.astral.sh/uv) and [Poetry](https://python-poetry.org) to use Font Awesome
 Pro's Python package in their projects without having to write their Font Awesome Pro package token to `pyproject.toml`.
 
-pip and PDM users have no need for this as those package managers can natively expand environment variables in index
+pip and PDM users have no need for this as those package managers can expand environment variables in index
 URLs (docs: [pip](https://pip.pypa.io/en/stable/reference/requirements-file-format/#using-environment-variables), [PDM](https://pdm-project.org/latest/usage/config/#store-credentials-with-the-index)).
 uv [may join them in the future](https://github.com/astral-sh/uv/issues/5734). Poetry [will not](https://github.com/python-poetry/poetry/issues/208#issuecomment-1266296921).
 
