@@ -41,7 +41,7 @@ uv add fontawesomepro
 Add fa-proxy as an [explicit package source](https://python-poetry.org/docs/repositories#explicit-package-sources):
 
 ```shell
-poetry source add --priority=explicit fontawesome https://fa.celsiusnarhwal.dev/simple/
+poetry source add --priority=explicit fontawesome https://fa.celsiusnarhwal.dev/simple
 ```
 
 Then configure its credentials, replacing `<username>` with literally anything and `<token>` with your Font Awesome
