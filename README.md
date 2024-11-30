@@ -1,6 +1,6 @@
 # fa-proxy
 
-fa-proxy is an HTTP Basic authentication wrapper around Font Awesome's
+fa-proxy is an HTTP authentication wrapper around Font Awesome's
 [private, Pro-only, Python package index](https://docs.fontawesome.com/web/use-with/python-django#using-font-awesome-pro-with-django).
 It exists to allow users of [uv](https://docs.astral.sh/uv) and [Poetry](https://python-poetry.org) to use Font Awesome
 Pro's Python package in their projects without having to write their Font Awesome Pro package token to `pyproject.toml`.
