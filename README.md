@@ -6,8 +6,8 @@ It exists to allow users of [uv](https://docs.astral.sh/uv) and [Poetry](https:/
 Pro's Python package in their projects without having to write their Font Awesome Pro package token to `pyproject.toml`.
 
 pip and PDM users have no need for this as those package managers can natively expand environment variables in index
-URLs. (Docs: [pip](https://pip.pypa.io/en/stable/reference/requirements-file-format/#using-environment-variables), [PDM](https://pdm-project.org/latest/usage/config/#store-credentials-with-the-index))
-uv may be join them in the future (astral-sh/uv#5734). Poetry [will not](https://github.com/python-poetry/poetry/issues/208).
+URLs (Docs: [pip](https://pip.pypa.io/en/stable/reference/requirements-file-format/#using-environment-variables), [PDM](https://pdm-project.org/latest/usage/config/#store-credentials-with-the-index)).
+uv [may join them in the future](https://github.com/astral-sh/uv/issues/5734). Poetry [will not](https://github.com/python-poetry/poetry/issues/208).
 
 ## Usage
 
