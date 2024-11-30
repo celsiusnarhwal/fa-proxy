@@ -13,7 +13,7 @@ uv [may join them in the future](https://github.com/astral-sh/uv/issues/5734). P
 
 ### uv
 
-Define a `[[tool.uv.index]]` entry for fa-proxy:
+[Define a `[[tool.uv.index]]`](https://docs.astral.sh/uv/configuration/indexes/#defining-an-index) entry for fa-proxy:
 
 ```toml
 # pyproject.toml
