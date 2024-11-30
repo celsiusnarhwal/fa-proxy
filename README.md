@@ -38,7 +38,7 @@ uv add fontawesomepro
 
 ### Poetry
 
-Add fa-proxy as an [explicit package source](https://python-poetry.org/docs/repositories#explicit-package-sources)
+Add fa-proxy as an [explicit package source](https://python-poetry.org/docs/repositories#explicit-package-sources):
 
 ```shell
 poetry source add --priority=explicit fontawesome https://fa.celsiusnarhwal.dev/simple/
