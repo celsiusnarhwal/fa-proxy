@@ -7,7 +7,7 @@ Pro's Python package in their projects without having to write their Font Awesom
 
 pip and PDM users have no need for this as those package managers can natively expand environment variables in index
 URLs. (Docs: [pip](https://pip.pypa.io/en/stable/reference/requirements-file-format/#using-environment-variables), [PDM](https://pdm-project.org/latest/usage/config/#store-credentials-with-the-index))
-uv may be join them in the future (astral-sh/uv#5734). Poetry will not (python-poetry/poetry#208).
+uv may be join them in the future (astral-sh/uv#5734). Poetry [will not](python-poetry/poetry#208).
 
 ## Usage
 
