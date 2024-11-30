@@ -23,7 +23,7 @@ name = "fontawesome"
 url = "https://fa.celsiusnarhwal.dev/simple"
 ```
 
-Then, set the `UV_INDEX_FONTAWESOME_PASSWORD` environment variable to your Font Awesome Pro package token (there's no
+Then set the `UV_INDEX_FONTAWESOME_PASSWORD` environment variable to your Font Awesome Pro package token (there's no
 need to set a username):
 
 ```shell
