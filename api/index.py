@@ -8,6 +8,11 @@ app = FastAPI()
 security = HTTPBasic()
 
 
+@app.get("/")
+async def root():
+    return RedirectResponse("https://github.com/celsiusnarhwal/fa-proxy")
+
+
 @app.get("/{path:path}")
 async def proxy(
     path: str, credentials: t.Annotated[HTTPBasicCredentials, Depends(security)]
