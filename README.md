@@ -51,7 +51,7 @@ Then set the `POETRY_HTTP_BASIC_FONTAWESOME_PASSWORD` environment variable to yo
 export POETRY_HTTP_BASIC_FONTAWESOME_PASSWORD=XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
 ```
 
-Alternatively, use Poetry's CLI to do the same, replacing `<token>` with your Font Awesome Package token
+Alternatively, set credentials via Poetry's CLI, replacing `<token>` with your Font Awesome Package token
 (`<username>` can be whatever, it doesn't matter):
 
 ```shell
