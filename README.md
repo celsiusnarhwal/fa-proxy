@@ -44,8 +44,15 @@ Add fa-proxy as an [explicit package source](https://python-poetry.org/docs/repo
 poetry source add --priority=explicit fontawesome https://fa.celsiusnarhwal.dev/simple
 ```
 
-Then configure its credentials, replacing `<username>` with literally anything and `<token>` with your Font Awesome
-package token:
+Then set the `POETRY_HTTP_BASIC_FONTAWESOME_PASSWORD` environment variable to your Font Awesome package token
+(there's no need to set a username):
+
+```shell
+export POETRY_HTTP_BASIC_FONTAWESOME_PASSWORD=XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
+```
+
+Alternatively, use Poetry's CLI to do the same, replacing `<token>` with your Font Awesome Package token
+(`<username>` can be whatever, it doesn't matter):
 
 ```shell
 poetry config http-basic.fontawesome <username> <token>
