@@ -3,7 +3,7 @@
 fa-proxy is an HTTP authentication wrapper around Font Awesome's
 [private, Pro-only, Python package index](https://docs.fontawesome.com/web/use-with/python-django#using-font-awesome-pro-with-django).
 It exists to allow users of [uv](https://docs.astral.sh/uv) and [Poetry](https://python-poetry.org) to use Font Awesome
-Pro's Python package in their projects without having to write their Font Awesome Pro package token to `pyproject.toml`.
+Pro's Python package in their projects without having to write their Font Awesome package token to `pyproject.toml`.
 
 pip and PDM users have no need for this as those package managers can expand environment variables in index
 URLs (docs: [pip](https://pip.pypa.io/en/stable/reference/requirements-file-format/#using-environment-variables), [PDM](https://pdm-project.org/latest/usage/config/#store-credentials-with-the-index)).
@@ -23,7 +23,7 @@ name = "fontawesome"
 url = "https://fa.celsiusnarhwal.dev/simple"
 ```
 
-Then set the `UV_INDEX_FONTAWESOME_PASSWORD` environment variable to your Font Awesome Pro package token (there's no
+Then set the `UV_INDEX_FONTAWESOME_PASSWORD` environment variable to your Font Awesome package token (there's no
 need to set a username):
 
 ```shell
@@ -45,7 +45,7 @@ poetry source add --priority=explicit fontawesome https://fa.celsiusnarhwal.dev/
 ```
 
 Then configure its credentials, replacing `<username>` with literally anything and `<token>` with your Font Awesome
-Pro package token:
+package token:
 
 ```shell
 poetry config http-basic.fontawesome <username> <token>
@@ -55,4 +55,29 @@ You can now install Font Awesome Pro:
 
 ```shell
 poetry add --source fontawesome fontawesomepro
+```
+
+## How's it work?
+
+Font Awesome's private Python package index is located at:
+
+```
+https://dl.fontawesome.com/FONTAWESOME_PACKAGE_TOKEN/fontawesome-pro/python/simple
+```
+
+where `FONTAWESOME_PACKAGE_TOKEN` is your Font Awesome package token.
+
+fa-proxy accepts your token as in the form of a password provided via HTTP authentication, inserts it into the above
+URL, and redirects you to to said URL. [That's it.](https://github.com/celsiusnarhwal/fa-proxy/blob/main/api/index.py)
+
+## Don't trust me?
+
+That's cool. Deploy your own instance of fa-proxy to [Vercel](https://vercel.com):
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fcelsiusnarhwal%2Ffa-proxy)
+
+Or host one elsewhere with [Docker](https://docker.com):
+
+```shell
+docker run ---name fa-proxy -p 8000:8000 -d ghcr.io/celsiusnarhwal/fa-proxy
 ```
