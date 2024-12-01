@@ -1,15 +1,8 @@
 {
   "rewrites": [
     {
-      "source": "/simple/(.*)",
+      "source": "/(.*)",
       "destination": "/api"
     }
-  ],
-  "redirects": [
-    {
-      "source": "/",
-      "destination": "https://github.com/celsiusnarhwal/fa-proxy"
-    }
-  ],
-  "trailingSlash": true
+  ]
 }
