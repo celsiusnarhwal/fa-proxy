@@ -33,8 +33,6 @@ jobs:
         with:
           images: |
             ghcr.io/${{ github.repository }}
-          tags: |
-            type=edge,branch=main
 
       - name: Build and Push Image
         uses: docker/build-push-action@v6
