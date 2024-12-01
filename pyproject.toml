@@ -1,7 +1,7 @@
 [project]
 name = "fa-proxy"
 version = "0.1.0"
-description = "Add your description here"
+description = "An HTTP authentication wrapper around Font Awesome Pro's private Python package index"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
